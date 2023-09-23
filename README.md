@@ -1,3 +1,3 @@
 # CashFlow
 
-## React/Firebase login & registration app that uses Friebase Auth and Authentication state Context & Reducers
+### React/Firebase login & registration app that uses Firebase Auth and Authentication State Context & Reducers
