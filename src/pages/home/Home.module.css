@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  max-width: 960px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+  padding: 20px;
+  column-gap: 40px;
+}
+.content {
+  flex-grow: 1;
+  min-width: 50%;
+}
+.sidebar form {
+  padding: 20px;
+  background: #205d67;
+  border-radius: 10px;
+}
+.sidebar input, .sidebar select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  color: #555;
+  font-size: 1em;
+}
+.sidebar label {
+  margin: 0 auto 20px;
+  display: block;
+  color: #fff;
+}
+.sidebar button {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 12px;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+.sidebar button:hover {
+  background: #639a67;
+}
+.sidebar h3 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+
+
+/* transactions */
+.transactions li {
+  margin: 30px auto;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 0px 15px rgba(50, 50, 50, 0.4);
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.transactions .name {
+  color: #000;
+  font-size: 1.4rem;
+}
+
+.transactions .amount {
+  margin-left: auto;
+  margin-right: 40px;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.transactions button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ddd;
+  color: #000;
+  border: none;
+  padding: 12px 8px;
+  text-align: center;
+  line-height: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* media queries */
+@media only screen and (max-width: 420px) {
+  .sidebar button:hover {
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    margin: 0;
+  }
+}
