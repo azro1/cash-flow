@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { useAuthContext } from './hooks/useAuthContext';
 
 // components
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       {authIsReady && (
-        <BrowserRouter>
+        <HashRouter>
             <Navbar />
             <Switch>
               <Route exact path="/">
@@ -34,7 +34,7 @@ function App() {
                 {!user && <Login />}
               </Route>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
        )}
     </div>
   );
